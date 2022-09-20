@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+    <center><h1>PASCASARJANA</h1></center>
+    <h2>Terdiri dari pascasarjana:</h2>
+    <p>Doktor Pendidikan, Doktor Ilmu Akuntansi, Magister Ilmu Hukum, Magister Ilmu Pertanian, Magister Administrasi Publik, Magister Akuntansi, Magister Ilmu Komunikasi, Magister Manajemen, Magister Teknik Kimia, Pendidikan Bahasa Indonesia, Pendidikan Bahasa Inggris, Pendidikan Matematika, dan Teknologi Pendidikan. </p>
+    
+    {{title | upper }} <br>
+    {% for s1 in s1 %}
+        <li>{{s1}}</li>
+    {% endfor %}
+
+{% endblock %}
